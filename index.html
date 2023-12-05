@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number System Conversion</title>
+    <link rel="stylesheet" href="niroj.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+        <div class="container">
+            <div class="title">
+                <h1>Numbers Converter</h1><br><br>
+               <marquee> <h2 style="background-color:yellow">Design and Created By Niroj</h2></marquee>
+                <span class="icon"><i class="fas fa-calculator fa-spin fa-spin-reverse" style="color: #1f5137;"></i></span>
+            </div>
+
+        <main>
+            <div class="input-container">
+                <label for="ipType">Input Type:</label>
+                <select class="iType" id="ipType">
+                    <option value="ipbin">BIN</option>
+                    <option value="ipoct">OCT</option>
+                    <option value="ipdec">DEC</option>
+                    <option value="iphex">HEX</option>
+                </select>
+
+                <label for="ipNum">Input Number:</label>
+                <input class="iNum" id="ipNum" type="text">
+            </div>
+
+            <button class="btn" onclick="convert()">CONVERT</button>
+
+            <div class="output-container">
+                <label for="opType">Output Type:</label>
+                <select class="oType" id="opType">
+                    <option value="opbin">BIN</option>
+                    <option value="opoct">OCT</option>
+                    <option value="opdec">DEC</option>
+                    <option value="ophex">HEX</option>
+                </select>
+
+                <label for="opNum">Output Number:</label>
+                <input class="oNum" id="opNum" type="text">
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

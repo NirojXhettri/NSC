@@ -1,0 +1,88 @@
+body {
+    background-color: #f4f4f4;
+    font-family: 'Baloo Tamma 2', cursive;
+    margin: 0;
+}
+
+.container {
+    max-width: 450px;
+    background: red;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.4);
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    font-size: 50px; /* Adjusted font size for a larger icon */
+    color: #1f5137; /* Adjusted icon color */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container,
+.output-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transition: 0.3s;
+}
+
+@media only screen and (min-width: 600px) {
+    main {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .input-container,
+    .output-container {
+        flex: 1;
+    }
+
+    .input-container {
+        margin-right: 15px;
+    }
+}
+
+
